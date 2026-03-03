@@ -90,7 +90,7 @@ if archivo_subido is not None:
                 # =======================================================
                 ID_CARPETA_DESTINO = "1_85lcSovQ6UDikiljKUzSG_N4PulQZlI"       
                 # Ahora la plantilla debe estar en la misma carpeta que este script
-                RUTA_PLANTILLA_PDF = "C:\\Users\\ferna\\Desktop\\Certificados_pediatra\\plantilla_SECIP.pdf" 
+                RUTA_PLANTILLA_PDF = "plantilla_SECIP.pdf" 
                 
                 pdfmetrics.registerFont(TTFont('IBMPlexCondensed', 'IBMPlexSansCondensed-Bold.ttf'))
 
@@ -172,4 +172,5 @@ if archivo_subido is not None:
                 st.success("¡Proceso completado! Los certificados están listos en Drive.")
                 
             except Exception as e:
+
                 st.error(f"Hubo un error en el proceso: {e}")

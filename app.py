@@ -57,7 +57,7 @@ st.markdown("""
 # 2. INTERFAZ DE USUARIO
 st.title("Sistema de Generación de Certificados")
 st.write("Sube el archivo de Excel con los datos de los participantes.")
-st.write("Recuerda usar en la 1era fila estos nombres: nombre	fecha_completado	fecha_expiracion ")
+st.write("Recuerda usar en la 1era fila estos nombres: nombre; 	fecha_completado; 	fecha_expiracion ")
 st.write("Formato de fecha -> 01-03-2026")
 
 archivo_subido = st.file_uploader("Cargar archivo Excel (.xlsx)", type=["xlsx", "xls"])
@@ -176,5 +176,6 @@ if archivo_subido is not None:
             except Exception as e:
 
                 st.error(f"Hubo un error en el proceso: {e}")
+
 
 

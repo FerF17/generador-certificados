@@ -66,7 +66,7 @@ if archivo_subido is not None:
     st.write("Vista previa de los datos:")
     st.dataframe(df.head())
     
-    if st.button("Generar y Enviar Certificados"):
+    if st.button("Generar Certificados"):
         with st.spinner("Conectando con Google Drive y generando certificados..."):
             
             try:
@@ -174,3 +174,4 @@ if archivo_subido is not None:
             except Exception as e:
 
                 st.error(f"Hubo un error en el proceso: {e}")
+
